@@ -1,0 +1,10 @@
+<h2>Latest Claims</h2>
+<ul><% @claims.each do |c| %>
+  <li><%= claim_link c %></li><% end %>
+</ul>
+<a href="/items/new">Add a claim</a>
+
+<h2>Latest Reviews</h2>
+<ul><% @reviews.each do |r| %>
+  <li><%= review_link r %></li><% end %>
+</ul>
